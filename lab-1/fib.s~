@@ -16,7 +16,7 @@ fibonacci:
   cmp r4, #1		; //Compare r4 to 1
   beq .L4		;// if (r4 == 1) goto .L4
 
-  sub r0, r4, #1  ;//r0 = r4 - 1
+  sub r0, r4, #1  ;//r0 = r4 - 2
   bl fibonacci		  ;// goto fibonacci @PC relative address
 
   mov r5, r0		;// r5 = r0
