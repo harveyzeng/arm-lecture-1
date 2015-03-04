@@ -37,12 +37,12 @@ l1:
 
 	@ END CODE MODIFICATION
 .L3:
-	mov r0, #0			@ R0 = 0
+mov r0, #0			@ R0 = 0
 pop {  pc}
 	
 
 .L4:
-	mov r0, #1			@ R0 = 1
+mov r0, #1			@ R0 = 1
 pop {  pc}
 	
 

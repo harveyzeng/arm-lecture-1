@@ -3,7 +3,7 @@
 extern int fibonacci(int x);
 
 int main(int argc, char **argv)
-{
+{  
   int number=0;
   int result=0;
 
@@ -11,7 +11,7 @@ int main(int argc, char **argv)
     	result = fibonacci(number);   
   	printf("The fibonacci sequence at %d is: %d\n", number,result);
     } 
-else return 2; 
+	else return 2; 
 	return 1;
 }
 
