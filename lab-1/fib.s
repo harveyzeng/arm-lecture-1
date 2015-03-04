@@ -9,7 +9,7 @@
 	.type fibonacci, function
 
 fibonacci:
-	push { r4, r5, lr}	;// function prolog
+  push { r4, r5, lr}	;// function prolog
   subs r4, r0, #0		;// r4 = r0 - 0
   ble .L3		; //if (r0 <= 0) goto .L3
 
