@@ -11,7 +11,7 @@ int main(int argc, char **argv)
     	result = fibonacci(number);   
   	printf("The fibonacci sequence at %d is: %d\n", number,result);
     } else {
-        printf("failed to read integer.\n");
+        return 2;
     }
 	return 1;
 }
