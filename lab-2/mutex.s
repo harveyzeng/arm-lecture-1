@@ -10,17 +10,15 @@
 lock_mutex:
         @ INSERT CODE BELOW
 	ldr r1, =locked  
-	//ldr r2,  =locked
+	
 .L1:
- 		//swp r1,r2,[r0]  
-		//cmp r1,r2
-		//beq .L1  	
+ 			
 		ldrex r2, [r0]
 	    	cmp r2, #0
             strexeq r2, r1, [r0] 
             cmpeq r2, #0
             bne .L1
-		//DMB
+		
         @ END CODE INSERT
 	bx lr
 
@@ -33,7 +31,7 @@ unlock_mutex:
 	ldr r1, =unlocked
 	
     	str r1, [r0]
-         //mov [ro], #0
+        
 	
     	bx lr
 
