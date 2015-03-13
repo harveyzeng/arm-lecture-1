@@ -23,5 +23,6 @@ clean:
 	rm -f $(objects) atomic
 
 qemu: atomic
+	arm-linux-gnueabihf-objdump -d atomic | less
 	qemu-arm ./atomic
 	
