@@ -10,6 +10,7 @@ int main(int argc, char **argv)
   if (scanf("%d", &number) == 1) {
     	result = fibonacci(number);   
   	printf("The fibonacci sequence at %d is: %d\n", number,result);
+	return 3;
     } else {
         return 2;
     }

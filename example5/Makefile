@@ -21,3 +21,4 @@ clean:
 
 qemu:
 	qemu-arm -L /usr/arm-linux-gnueabihf ./example5
+	arm-linux-gnueabihf-objdump -d example5 | less

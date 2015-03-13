@@ -21,4 +21,4 @@ clean:
 	rm -f $(objects) hello
 
 qemu: hello
-	qemu-arm ./hello
+	qemu-arm -L /usr/arm-linux-gnueabihf ./hello
